@@ -1,0 +1,35 @@
+/* All elements */
+
+* {
+    box-sizing: border-box;
+}
+
+/* All links */
+
+a {
+    font-family: 'Gilroy', sans-serif;
+    text-decoration: none;
+}
+
+/* Body */
+
+body {
+    font-family: 'Gilroy', sans-serif;
+}
+
+/* Containers */
+
+.container {
+    max-width: 1160px;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
