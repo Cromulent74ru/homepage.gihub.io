@@ -11,6 +11,12 @@ a {
     text-decoration: none;
 }
 
+/* All buttons */
+
+button {
+    font-family: 'Gilroy', sans-serif;
+}
+
 /* Body */
 
 body {
@@ -54,4 +60,55 @@ body {
 }
 .burger-menu-btn__item:last-child {
     margin-bottom: 0;
+}
+
+/* Intro */
+
+.intro {
+    background: url(../img/intro-image.png) no-repeat center right 25px, linear-gradient(to top, rgba(152, 195, 232, 0.3), #fff);
+    
+    padding-top: 90px;
+    padding-bottom: 190px;
+}
+.intro-title {
+    font-family: 'Galien';
+    color: #1F3F68;
+    font-size: 64px;
+    font-family: bold;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    
+    max-width: 600px;
+}
+.intro-text {
+    color: rgba(31, 63, 104, 0.6);
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    
+    max-width: 425px;
+    
+    margin-top: 32px;
+}
+.btn {
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    background-color: #5A98D0;
+    
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    
+    border-radius: 10px;
+    border: 2px solid #5A98D0;
+    
+    padding: 13px 46px;
+    margin-top: 71px;
+    
+    transition: ease .5s;
+}
+.btn:hover {
+    color: #5A98D0;
+    
+    background-color: rgba(53, 110, 173, 0.02);
 }
