@@ -12,11 +12,11 @@
 <body>
     <!-- SVG code -->
     
-    <svg display="none">
+    <svg display="none" viewBox="0 0 48 48">
         <symbol id="logo">
-            <g>
-                
-            </g>
+            <circle cx="16" cy="24" r="16" fill="#316099"/>
+            <circle cx="32" cy="24" r="15" fill="white" stroke="#316099" stroke-width="2"/>
+            <path d="M39.3 30L34.38 16H30.96L26.06 30H29.04L29.88 27.48H35.46L36.3 30H39.3ZM32.68 19.18L34.6 24.9H30.76L32.68 19.18Z" fill="#316099"/>
         </symbol>
     </svg>
     
@@ -24,7 +24,12 @@
     
     <header class="header">
         <div class="container header-container">
-            
+            <svg class="logo"><use xlink:href="#logo"></use></svg>
+            <ul class="burger-menu-btn">
+                <li class="burger-menu-btn__item"></li>
+                <li class="burger-menu-btn__item"></li>
+                <li class="burger-menu-btn__item"></li>
+            </ul>
         </div>
     </header>
 </body>
