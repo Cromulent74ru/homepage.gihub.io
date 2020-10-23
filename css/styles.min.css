@@ -21,6 +21,8 @@ button {
 
 body {
     font-family: 'Gilroy', sans-serif;
+    
+    background-color: #fff;
 }
 
 /* Containers */
@@ -36,6 +38,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.what-we-do-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    max-height: 1500px;
 }
 
 /* Header */
@@ -111,4 +122,97 @@ body {
     color: #5A98D0;
     
     background-color: rgba(53, 110, 173, 0.02);
+}
+
+/* What we do */
+
+.what-we-do {
+    padding: 180px 0;
+}
+.what-we-do__title {
+    color: #316099;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    
+    max-width: 360px;
+    
+    margin-bottom: 160px;
+}
+.what-we-do__card {
+    position: relative;
+    
+    padding: 48px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+    
+    width: 380px;
+    
+    border-radius: 10px;
+    
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+}
+.what-we-do__card:first-child {
+    margin-bottom: 0;
+}
+.what-we-do__card:last-child {
+    margin-bottom: 0;
+}
+.what-we-do__card-image {
+    margin-left: 26px;
+}
+.what-we-do__card-title {
+    color: #316099;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    
+    margin-top: 56px;
+}
+.what-we-do__card-text {
+    color: rgba(31, 63, 104, 0.6);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    
+    margin-top: 16px;
+}
+.learn-more {
+    display: inline-block;
+    
+    position: relative;
+    
+    color: #5A98D0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    
+    background: url(../img/learn-more-arrow-icon.png) no-repeat center right;
+    
+    margin-top: 32px;
+    padding-right: 48px;
+}
+.learn-more::after {
+    display: inline-block;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    content: "";
+    
+    height: 2px;
+    width: 0;
+    
+    background-color: #fff;
+    border-radius: 50%;
+    
+    transition: ease .3s;
+}
+.learn-more:hover.learn-more::after {
+    background-color: #5A98D0;
+    width: 100%;
 }
