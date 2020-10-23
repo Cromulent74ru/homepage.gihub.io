@@ -116,12 +116,29 @@ body {
     padding: 13px 46px;
     margin-top: 71px;
     
+    min-width: 220px;
+    
     transition: ease .5s;
 }
 .btn:hover {
-    color: #5A98D0;
+    transform: scale(1.1);
+}
+
+/* Section */
+
+.section__title {
+    color: #316099;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.05em;
     
-    background-color: rgba(53, 110, 173, 0.02);
+    max-width: 360px;
+}
+.section__text {
+    color: rgba(31, 63, 104, 0.6);
+    line-height: 26px;
+    letter-spacing: 0.05em;
 }
 
 /* What we do */
@@ -130,14 +147,6 @@ body {
     padding: 180px 0;
 }
 .what-we-do__title {
-    color: #316099;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    
-    max-width: 360px;
-    
     margin-bottom: 160px;
 }
 .what-we-do__card {
@@ -215,4 +224,67 @@ body {
 .learn-more:hover.learn-more::after {
     background-color: #5A98D0;
     width: 100%;
+}
+
+/* Our client */
+
+.our-client {
+    border-top-left-radius: 200px;
+    
+    background-color: #5A98D0;
+    
+    padding: 95px 0 125px 0;
+}
+.our-client__content {
+    display: flex;
+    align-items: center;
+}
+.our-client__title {
+    color: #fff;
+    
+    margin-right: 97px;
+    
+    max-width: 283px;
+}
+.our-client__text {
+    color: rgba(255, 255, 255, 0.6);
+    
+    max-width: 540px;
+}
+.our-clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin-top: 110px;
+}
+.our-client-item {
+    text-align: center;
+    
+    width: 25%;
+    
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.our-client-item:nth-child(4n+4) {
+    border-right: none;
+}
+.our-client-item:nth-last-child(-n+4) {
+    border-bottom: none;
+}
+.our-client-item__links {
+    display: block;
+    
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    padding: 41px 46px;
+}
+.our-client-item__more-clients {
+    text-transform: none;
+    
+    background-color: rgba(31, 63, 104, 0.2);
 }
