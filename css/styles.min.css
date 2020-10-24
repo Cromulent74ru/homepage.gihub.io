@@ -61,6 +61,18 @@ body {
     
     padding: 95px 0 65px 0;
 }
+.contact-us__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* HOMEPAGE */
+
+
 
 /* Header */
 
@@ -436,4 +448,39 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 65px;
+}
+
+
+
+/* CONTACT */
+
+
+
+/* Contact us */
+
+.contact-us {
+    background: url(../img/contact-us-bg.jpg) no-repeat center;
+    background-size: 100%;
+    
+    padding: 50px 0;
+}
+.contact-us__title {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    
+    max-width: 780px;
+}
+.contact-us__text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    max-width: 780px;
+    
+    margin-top: 16px;
 }
