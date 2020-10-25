@@ -655,6 +655,9 @@ body {
         
         width: 100%;
     }
+    .footer-line {
+        width: 100%;
+    }
 }
 
 /* 1340px */
@@ -676,6 +679,13 @@ body {
     }
     .footer-container {
         flex-wrap: wrap;
+    }
+    
+    /* Header */
+    
+    .header {
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     
     /* Intro */
@@ -734,6 +744,39 @@ body {
     .footer-list {
         margin-top: 50px;
     }
+    
+    /* Contact us */
+    
+    .section-contact-us {
+        background-size: 175% 100%;
+        background-position: left;
+    }
+    .contact-us__content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .contact-us__form {
+        order: 0;
+        
+        width: 100%;
+    }
+    .contact-us__input {
+        width: 100%;
+    }
+    .contact-us__data-content {
+        order: 1;
+        
+        margin-top: 100px;
+        margin-right: 0;
+        
+        width: 100%;
+    }
+    .contact-us__image {
+        width: 50%;
+    }
+    .send-message {
+        width: 100%;
+    }
 }
 
 /* 875px */
@@ -756,6 +799,13 @@ body {
         margin-left: 100px;
         margin-top: 25px;
     }
+    
+    /* Contact us */
+    
+    .input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 /* 700px */
@@ -773,6 +823,9 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+    } 
+    .contact-us__container {
+        max-width: 100%;
     }
     
     /* Header */
@@ -894,9 +947,6 @@ body {
         
         margin-top: 20px;
     }
-    .footer-line {
-        width: 100%;
-    }
     .footer-content-list {
         margin-top: 25px;
         margin-right: 0;
@@ -917,5 +967,57 @@ body {
     }
     .footer-item {
         margin-bottom: 10px;
+    }
+    
+    /* Contact us */
+    
+    .section-contact-us {
+        background-size: 350% 100%;
+        background-position: center left;
+        
+        overflow: hidden;
+        
+        padding: 50px 0;
+    }
+    .contact-us__data-content {
+        max-width: 320px;
+        
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section-contact-us__title {
+        font-size: 36px;
+        line-height: 66px;
+    }
+    .section-contact-us__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contact-us {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .form-title {
+        margin-bottom: 30px;
+    }
+    .input {
+        padding: 10px 25px;
+        
+        margin-bottom: 20px;
+    }
+    .textarea {
+        padding: 10px 25px;
+    }
+    .send-message {
+        padding: 15px;
+        
+        min-width: auto;
+    }
+    .contact-us__image {
+        width: 100%;
     }
 }
