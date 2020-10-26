@@ -80,6 +80,20 @@ body {
 
 .header {
     padding: 40px 0;
+    
+    background-color: #fff;
+}
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    
+    width: 100%;
+    
+    box-shadow: 0 10px 100px 10px rgba(0, 0, 0, 0.1);
+    
+    padding: 15px 0;
 }
 .logo {
     width: 48px;
@@ -652,7 +666,7 @@ body {
     width: 0; /* DESKTOP: 30%
                  TABLET and MOBILE: 100% */
     
-    padding: 0; /* DESKTOP: 100px 50px 200px 50px
+    padding: 100px 0 200px 0; /* DESKTOP: 100px 50px 200px 50px
                    TABLET and MOBILE: 75px 50px 125px 50px */
     
     background-color: #fff;
@@ -834,7 +848,7 @@ body {
         
         background-color: transparent;
     }
-    .modal-window {
+    .form.modal-window {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1007,10 +1021,10 @@ body {
         max-width: 100%;
     }
     
-    /* Burger menu */
+    /* Modal windows */
     
     .burger-menu {
-        padding: 75px 50px 125px 50px;
+        padding: 75px 0 125px 0; /* 75px 50px 125px 50px */
     }
     .burger-menu__title {
         font-size: 32px;
@@ -1023,6 +1037,21 @@ body {
     .burger-menu__item a {
         font-size: 18px;
         line-height: 28px;
+    }
+    .form-title.modal-window__title {
+        margin-bottom: 0;
+    }
+    .form-header {
+        width: 100%;
+    }
+    .send-message.modal-window__send-message {
+        width: 100%;
+    }
+    .modal-wind100__input-title {
+        width: 100%;
+    }
+    .modal-window__input {
+        width: 100%;
     }
     
     /* Header */
