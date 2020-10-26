@@ -716,7 +716,74 @@ body {
     cursor: pointer;
 }
 
+/* Lat's talk */
 
+.modal-window-bg {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-window {
+    height: 0; /* 770px */
+    
+    padding: 0 56px; /* 56px */
+    
+    overflow: hidden;
+}
+.modal-window__input {
+    padding: 10px 30px;
+}
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 48px;
+    
+    width: 100%;
+}
+.modal-window__title {
+    margin-bottom: 0;
+}
+.modal-window__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    
+    width: 35px;
+    height: 35px;
+    
+    cursor: pointer;
+}
+.modal-window__close-btn_line {
+    display: block;
+    
+    position: absolute;
+    
+    background-color: #1F3F68;
+    
+    width: 30px;
+    height: 3px;
+    
+    border-radius: 200px;
+}
+.modal-window__close-btn_line:first-child {
+    transform: rotate(-45deg);
+}
+.modal-window__close-btn_line:nth-child(2) {
+    transform: rotate(45deg);
+}
 
 /* MEDIA */
 
@@ -758,6 +825,39 @@ body {
     }
     .footer-container {
         flex-wrap: wrap;
+    }
+    
+    /* Modal windows */
+    
+    .modal-window-bg {
+        justify-content: flex-start;
+        
+        background-color: transparent;
+    }
+    .modal-window {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        height: 100%;
+        width: 0; /* 100% */
+        
+        padding: 56px 0; /* 56px */
+        
+        border-radius: 0;
+    }
+    .form-header {
+        width: 70%;
+    }
+    .send-message.modal-window__send-message {
+        width: 70%;
+    }
+    .modal-window__input-title {
+        width: 70%;
+    }
+    .modal-window__input {
+        width: 70%;
     }
     
     /* Header */

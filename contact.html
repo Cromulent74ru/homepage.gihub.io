@@ -27,6 +27,36 @@
             <path d="M38.3 31L33.38 17H29.96L25.06 31H28.04L28.88 28.48H34.46L35.3 31H38.3ZM31.68 20.18L33.6 25.9H29.76L31.68 20.18Z" fill="#316099"/>
         </symbol>
     </svg>
+    
+    <!-- Burger menu -->
+    
+    <ul class="burger-menu">
+        <li class="burger-menu__title">Burger menu</li>
+        <ul class="burger-menu-list">
+            <li class="burger-menu__item"><a href="#what-we-do" class="burger-menu__link-armature">What we do</a></li>
+            <li class="burger-menu__item"><a href="#our-client" class="burger-menu__link-armature">Our client</a></li>
+            <li class="burger-menu__item"><a href="contact.html" class="burger-menu__link">Contact us</a></li>
+        </ul>
+        <li class="burger-menu__hide-menu">Hide menu</li>
+    </ul>
+    
+    <!-- Modal windows -->
+    
+    <div class="modal-window-bg lats-talk-bg">
+        <form action="" class="form modal-window lats-talk">
+            <div class="form-header">
+                <h1 class="form-title modal-window__title lats-talk__title">Send message</h1>
+                <div class="modal-window__close-btn lats-talk__close-btn"><div class="modal-window__close-btn_line"></div><div class="modal-window__close-btn_line"></div></div>
+            </div>
+            <label for="contact-us__full-name" class="input__title modal-window__input-title">Full name:</label>
+            <input id="contact-us__full-name" type="text" class="input modal-window__input lats-talk__input" placeholder="Your name">
+            <label for="contact-us__email" class="input__title modal-window__input-title">Email:</label>
+            <input id="contact-us__email" type="text" class="input modal-window__input lats-talk__input" placeholder="Your email">
+            <label for="contact-us__message" class="input__title modal-window__input-title">Message:</label>
+            <textarea name="" id="contact-us__message" cols="30" rows="10" class="textarea modal-window__input lats-talk__input" placeholder="Your message"></textarea>
+            <button class="btn send-message modal-window__send-message lats-talk__send-message">Send message</button>
+        </form>
+    </div>
        
     <!-- Main code -->
     
@@ -74,7 +104,7 @@
                     <input id="contact-us__email" type="text" class="input contact-us__input" placeholder="Your email">
                     <label for="contact-us__message" class="input__title">Message:</label>
                     <textarea name="" id="contact-us__message" cols="30" rows="10" class="textarea contact-us__input" placeholder="Your message"></textarea>
-                    <button class="btn send-message">Send message</button>
+                    <button class="btn send-message contact-us__send-message">Send message</button>
                 </form>
             </div>
         </div>
