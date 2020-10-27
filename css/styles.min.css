@@ -642,6 +642,14 @@ body {
     padding-bottom: 23px;
     margin-top: 72px;
 }
+.input-error {
+    color: red;
+    
+    border-color: red;
+}
+.input-error::placeholder {
+    color: red;
+}
 
 
 

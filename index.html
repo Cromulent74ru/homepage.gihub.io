@@ -43,17 +43,17 @@
     <!-- Modal windows -->
     
     <div class="modal-window-bg lats-talk-bg">
-        <form action="" class="form modal-window lats-talk">
+        <form action="php/mail.php" class="form modal-window lats-talk" method="post">
             <div class="form-header">
                 <h1 class="form-title modal-window__title lats-talk__title">Send message</h1>
                 <div class="modal-window__close-btn lats-talk__close-btn"><div class="modal-window__close-btn_line"></div><div class="modal-window__close-btn_line"></div></div>
             </div>
-            <label for="contact-us__full-name" class="input__title modal-window__input-title">Full name:</label>
-            <input id="contact-us__full-name" type="text" class="input modal-window__input lats-talk__input" placeholder="Your name">
-            <label for="contact-us__email" class="input__title modal-window__input-title">Email:</label>
-            <input id="contact-us__email" type="text" class="input modal-window__input lats-talk__input" placeholder="Your email">
-            <label for="contact-us__message" class="input__title modal-window__input-title">Message:</label>
-            <textarea name="" id="contact-us__message" cols="30" rows="10" class="textarea modal-window__input lats-talk__input" placeholder="Your message"></textarea>
+            <label for="modal-window__full-name" class="input__title modal-window__input-title">Full name:</label>
+            <input id="modal-window__full-name" type="text" class="input input__name modal-window__input lats-talk__input" placeholder="Your name" name="name" autocomplete="off">
+            <label for="modal-window__email" class="input__title modal-window__input-title">Email:</label>
+            <input id="modal-window__email" type="text" class="input input__email modal-window__input lats-talk__input" placeholder="Your email" name="email" autocomplete="off">
+            <label for="modal-window__message" class="input__title modal-window__input-title">Message:</label>
+            <textarea name="" id="modal-window__message" cols="30" rows="10" class="textarea input__message modal-window__input lats-talk__input" placeholder="Your message" name="message" autocomplete="off"></textarea>
             <button class="btn send-message modal-window__send-message lats-talk__send-message">Send message</button>
         </form>
     </div>
